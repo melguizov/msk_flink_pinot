@@ -1,0 +1,925 @@
+[
+  {
+    "city": "Atlanta",
+    "country": "US",
+    "coordinates": {
+      "longitude": -84.388,
+      "latitude": 33.749
+    },
+    "weather": {
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    },
+    "main": {
+      "temperature": 31.83,
+      "feels_like": 33.38,
+      "temp_min": 29.03,
+      "temp_max": 32.41,
+      "pressure": 1012,
+      "humidity": 47,
+      "sea_level": 1012,
+      "grnd_level": 978
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.57,
+      "deg": 310,
+      "gust": null
+    },
+    "clouds": {
+      "all": 0
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800094,
+    "sys": {
+      "type": 2,
+      "id": 2006620,
+      "country": "US",
+      "sunrise": 1755774245,
+      "sunset": 1755821852
+    },
+    "timezone": -14400,
+    "id": 4180439,
+    "timestamp": "2025-08-21T18:27:36.764591+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "London",
+    "country": "GB",
+    "coordinates": {
+      "longitude": -0.1257,
+      "latitude": 51.5085
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    },
+    "main": {
+      "temperature": 18.46,
+      "feels_like": 17.67,
+      "temp_min": 17.52,
+      "temp_max": 19.52,
+      "pressure": 1019,
+      "humidity": 50,
+      "sea_level": 1019,
+      "grnd_level": 1014
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.12,
+      "deg": 350,
+      "gust": null
+    },
+    "clouds": {
+      "all": 34
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800592,
+    "sys": {
+      "type": 2,
+      "id": 268730,
+      "country": "GB",
+      "sunrise": 1755752149,
+      "sunset": 1755803509
+    },
+    "timezone": 3600,
+    "id": 2643743,
+    "timestamp": "2025-08-21T18:27:36.765778+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Dubai",
+    "country": "AE",
+    "coordinates": {
+      "longitude": 55.3047,
+      "latitude": 25.2582
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    },
+    "main": {
+      "temperature": 35.96,
+      "feels_like": 42.59,
+      "temp_min": 35.14,
+      "temp_max": 35.96,
+      "pressure": 1000,
+      "humidity": 49,
+      "sea_level": 1000,
+      "grnd_level": 1000
+    },
+    "visibility": 8000,
+    "wind": {
+      "speed": 1.03,
+      "deg": 0,
+      "gust": null
+    },
+    "clouds": {
+      "all": 98
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800401,
+    "sys": {
+      "type": 1,
+      "id": 7537,
+      "country": "AE",
+      "sunrise": 1755741307,
+      "sunset": 1755787749
+    },
+    "timezone": 14400,
+    "id": 292223,
+    "timestamp": "2025-08-21T18:27:36.765788+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Chicago",
+    "country": "US",
+    "coordinates": {
+      "longitude": -87.65,
+      "latitude": 41.85
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04d"
+    },
+    "main": {
+      "temperature": 23.61,
+      "feels_like": 23.93,
+      "temp_min": 22.8,
+      "temp_max": 25.31,
+      "pressure": 1019,
+      "humidity": 73,
+      "sea_level": 1019,
+      "grnd_level": 997
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.14,
+      "deg": 20,
+      "gust": null
+    },
+    "clouds": {
+      "all": 75
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800320,
+    "sys": {
+      "type": 2,
+      "id": 2075214,
+      "country": "US",
+      "sunrise": 1755774324,
+      "sunset": 1755823339
+    },
+    "timezone": -18000,
+    "id": 4887398,
+    "timestamp": "2025-08-21T18:27:36.765793+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Los Angeles",
+    "country": "US",
+    "coordinates": {
+      "longitude": -118.2437,
+      "latitude": 34.0522
+    },
+    "weather": {
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    },
+    "main": {
+      "temperature": 30.95,
+      "feels_like": 32.34,
+      "temp_min": 25.61,
+      "temp_max": 35.11,
+      "pressure": 1011,
+      "humidity": 49,
+      "sea_level": 1011,
+      "grnd_level": 992
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.63,
+      "deg": 260,
+      "gust": null
+    },
+    "clouds": {
+      "all": 0
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800569,
+    "sys": {
+      "type": 2,
+      "id": 2075946,
+      "country": "US",
+      "sunrise": 1755782351,
+      "sunset": 1755829994
+    },
+    "timezone": -25200,
+    "id": 5368361,
+    "timestamp": "2025-08-21T18:27:36.765798+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Tokyo",
+    "country": "JP",
+    "coordinates": {
+      "longitude": 139.6917,
+      "latitude": 35.6895
+    },
+    "weather": {
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    },
+    "main": {
+      "temperature": 28.48,
+      "feels_like": 32.97,
+      "temp_min": 26.45,
+      "temp_max": 29.24,
+      "pressure": 1010,
+      "humidity": 78,
+      "sea_level": 1010,
+      "grnd_level": 1008
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.06,
+      "deg": 160,
+      "gust": null
+    },
+    "clouds": {
+      "all": 0
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800761,
+    "sys": {
+      "type": 2,
+      "id": 268395,
+      "country": "JP",
+      "sunrise": 1755806730,
+      "sunset": 1755854599
+    },
+    "timezone": 32400,
+    "id": 1850144,
+    "timestamp": "2025-08-21T18:27:36.765803+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Paris",
+    "country": "FR",
+    "coordinates": {
+      "longitude": 2.3488,
+      "latitude": 48.8534
+    },
+    "weather": {
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    },
+    "main": {
+      "temperature": 22.6,
+      "feels_like": 22.06,
+      "temp_min": 21.77,
+      "temp_max": 23.54,
+      "pressure": 1015,
+      "humidity": 44,
+      "sea_level": 1015,
+      "grnd_level": 1004
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.63,
+      "deg": 10,
+      "gust": null
+    },
+    "clouds": {
+      "all": 0
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800340,
+    "sys": {
+      "type": 2,
+      "id": 2012208,
+      "country": "FR",
+      "sunrise": 1755751919,
+      "sunset": 1755802552
+    },
+    "timezone": 7200,
+    "id": 2988507,
+    "timestamp": "2025-08-21T18:27:36.765807+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Dallas",
+    "country": "US",
+    "coordinates": {
+      "longitude": -96.7836,
+      "latitude": 32.7668
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02d"
+    },
+    "main": {
+      "temperature": 34.48,
+      "feels_like": 40.99,
+      "temp_min": 33.3,
+      "temp_max": 36.22,
+      "pressure": 1014,
+      "humidity": 54,
+      "sea_level": 1014,
+      "grnd_level": 995
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.6,
+      "deg": 30,
+      "gust": null
+    },
+    "clouds": {
+      "all": 20
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800751,
+    "sys": {
+      "type": 2,
+      "id": 2075302,
+      "country": "US",
+      "sunrise": 1755777297,
+      "sunset": 1755824750
+    },
+    "timezone": -18000,
+    "id": 4684904,
+    "timestamp": "2025-08-21T18:27:36.765812+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Beijing",
+    "country": "CN",
+    "coordinates": {
+      "longitude": 116.3972,
+      "latitude": 39.9075
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    },
+    "main": {
+      "temperature": 23.94,
+      "feels_like": 24.95,
+      "temp_min": 23.94,
+      "temp_max": 23.94,
+      "pressure": 1004,
+      "humidity": 98,
+      "sea_level": 1004,
+      "grnd_level": 1000
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.53,
+      "deg": 258,
+      "gust": 2.41
+    },
+    "clouds": {
+      "all": 100
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800700,
+    "sys": {
+      "type": 1,
+      "id": 9609,
+      "country": "CN",
+      "sunrise": 1755811963,
+      "sunset": 1755860545
+    },
+    "timezone": 28800,
+    "id": 1816670,
+    "timestamp": "2025-08-21T18:27:36.765816+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Frankfurt am Main",
+    "country": "DE",
+    "coordinates": {
+      "longitude": 8.6833,
+      "latitude": 50.1167
+    },
+    "weather": {
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    },
+    "main": {
+      "temperature": 23.73,
+      "feels_like": 23.39,
+      "temp_min": 23.14,
+      "temp_max": 24.63,
+      "pressure": 1010,
+      "humidity": 47,
+      "sea_level": 1010,
+      "grnd_level": 992
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.66,
+      "deg": 360,
+      "gust": null
+    },
+    "clouds": {
+      "all": 0
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800611,
+    "sys": {
+      "type": 2,
+      "id": 2081434,
+      "country": "DE",
+      "sunrise": 1755750229,
+      "sunset": 1755801202
+    },
+    "timezone": 7200,
+    "id": 2925533,
+    "timestamp": "2025-08-21T18:27:36.765820+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Amsterdam",
+    "country": "NL",
+    "coordinates": {
+      "longitude": 4.8897,
+      "latitude": 52.374
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02d"
+    },
+    "main": {
+      "temperature": 16.69,
+      "feels_like": 15.98,
+      "temp_min": 16.56,
+      "temp_max": 17.21,
+      "pressure": 1016,
+      "humidity": 60,
+      "sea_level": 1016,
+      "grnd_level": 1017
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.26,
+      "deg": 351,
+      "gust": 7.6
+    },
+    "clouds": {
+      "all": 20
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800854,
+    "sys": {
+      "type": 2,
+      "id": 2101578,
+      "country": "NL",
+      "sunrise": 1755750815,
+      "sunset": 1755802436
+    },
+    "timezone": 7200,
+    "id": 2759794,
+    "timestamp": "2025-08-21T18:27:36.765824+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Istanbul",
+    "country": "TR",
+    "coordinates": {
+      "longitude": 28.9833,
+      "latitude": 41.0351
+    },
+    "weather": {
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    },
+    "main": {
+      "temperature": 25.68,
+      "feels_like": 25.53,
+      "temp_min": 25.68,
+      "temp_max": 25.68,
+      "pressure": 1011,
+      "humidity": 47,
+      "sea_level": 1011,
+      "grnd_level": 1004
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.17,
+      "deg": 60,
+      "gust": null
+    },
+    "clouds": {
+      "all": 0
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800705,
+    "sys": {
+      "type": 1,
+      "id": 6970,
+      "country": "TR",
+      "sunrise": 1755746392,
+      "sunset": 1755795297
+    },
+    "timezone": 10800,
+    "id": 745042,
+    "timestamp": "2025-08-21T18:27:36.765828+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Madrid",
+    "country": "ES",
+    "coordinates": {
+      "longitude": -3.7026,
+      "latitude": 40.4165
+    },
+    "weather": {
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    },
+    "main": {
+      "temperature": 27.89,
+      "feels_like": 26.93,
+      "temp_min": 26.79,
+      "temp_max": 28.69,
+      "pressure": 1013,
+      "humidity": 28,
+      "sea_level": 1013,
+      "grnd_level": 939
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.54,
+      "deg": 130,
+      "gust": null
+    },
+    "clouds": {
+      "all": 0
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800696,
+    "sys": {
+      "type": 2,
+      "id": 2084029,
+      "country": "ES",
+      "sunrise": 1755754301,
+      "sunset": 1755803074
+    },
+    "timezone": 7200,
+    "id": 3117735,
+    "timestamp": "2025-08-21T18:27:36.765832+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Bangkok",
+    "country": "TH",
+    "coordinates": {
+      "longitude": 100.5167,
+      "latitude": 13.75
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    },
+    "main": {
+      "temperature": 24.94,
+      "feels_like": 25.92,
+      "temp_min": 24.39,
+      "temp_max": 24.94,
+      "pressure": 1009,
+      "humidity": 93,
+      "sea_level": 1009,
+      "grnd_level": 1007
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.99,
+      "deg": 151,
+      "gust": 6.42
+    },
+    "clouds": {
+      "all": 100
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800622,
+    "sys": {
+      "type": 1,
+      "id": 9235,
+      "country": "TH",
+      "sunrise": 1755817550,
+      "sunset": 1755862579
+    },
+    "timezone": 25200,
+    "id": 1609350,
+    "timestamp": "2025-08-21T18:27:36.765836+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Singapore",
+    "country": "SG",
+    "coordinates": {
+      "longitude": 103.8501,
+      "latitude": 1.2897
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04n"
+    },
+    "main": {
+      "temperature": 27.39,
+      "feels_like": 31.11,
+      "temp_min": 26.92,
+      "temp_max": 28.29,
+      "pressure": 1011,
+      "humidity": 84,
+      "sea_level": 1011,
+      "grnd_level": 1010
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.54,
+      "deg": 30,
+      "gust": null
+    },
+    "clouds": {
+      "all": 75
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800439,
+    "sys": {
+      "type": 1,
+      "id": 9470,
+      "country": "SG",
+      "sunrise": 1755817396,
+      "sunset": 1755861133
+    },
+    "timezone": 28800,
+    "id": 1880252,
+    "timestamp": "2025-08-21T18:27:36.765840+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "New York",
+    "country": "US",
+    "coordinates": {
+      "longitude": -74.006,
+      "latitude": 40.7143
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04d"
+    },
+    "main": {
+      "temperature": 21.08,
+      "feels_like": 21.05,
+      "temp_min": 20,
+      "temp_max": 22.2,
+      "pressure": 1013,
+      "humidity": 69,
+      "sea_level": 1013,
+      "grnd_level": 1011
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 8.75,
+      "deg": 40,
+      "gust": 13.38
+    },
+    "clouds": {
+      "all": 100
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800800,
+    "sys": {
+      "type": 1,
+      "id": 4610,
+      "country": "US",
+      "sunrise": 1755771157,
+      "sunset": 1755819958
+    },
+    "timezone": -14400,
+    "id": 5128581,
+    "timestamp": "2025-08-21T18:27:36.765843+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Miami",
+    "country": "US",
+    "coordinates": {
+      "longitude": -80.1937,
+      "latitude": 25.7743
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    },
+    "main": {
+      "temperature": 31.45,
+      "feels_like": 38.45,
+      "temp_min": 31.12,
+      "temp_max": 32.79,
+      "pressure": 1014,
+      "humidity": 74,
+      "sea_level": 1014,
+      "grnd_level": 1012
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 0.45,
+      "deg": 95,
+      "gust": 1.34
+    },
+    "clouds": {
+      "all": 37
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800811,
+    "sys": {
+      "type": 2,
+      "id": 2006831,
+      "country": "US",
+      "sunrise": 1755773803,
+      "sunset": 1755820282
+    },
+    "timezone": -14400,
+    "id": 4164138,
+    "timestamp": "2025-08-21T18:27:36.765847+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Sydney",
+    "country": "AU",
+    "coordinates": {
+      "longitude": 151.2073,
+      "latitude": -33.8679
+    },
+    "weather": {
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "10n"
+    },
+    "main": {
+      "temperature": 11.59,
+      "feels_like": 11.34,
+      "temp_min": 10.72,
+      "temp_max": 12.06,
+      "pressure": 1023,
+      "humidity": 97,
+      "sea_level": 1023,
+      "grnd_level": 1017
+    },
+    "visibility": 3100,
+    "wind": {
+      "speed": 2.57,
+      "deg": 330,
+      "gust": null
+    },
+    "clouds": {
+      "all": 75
+    },
+    "rain": {
+      "one_hour": 0.75,
+      "three_hours": null
+    },
+    "snow": null,
+    "dt": 1755800307,
+    "sys": {
+      "type": 2,
+      "id": 2018875,
+      "country": "AU",
+      "sunrise": 1755807998,
+      "sunset": 1755847803
+    },
+    "timezone": 36000,
+    "id": 2147714,
+    "timestamp": "2025-08-21T18:27:36.765852+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Mumbai",
+    "country": "IN",
+    "coordinates": {
+      "longitude": 72.8479,
+      "latitude": 19.0144
+    },
+    "weather": {
+      "main": "Mist",
+      "description": "mist",
+      "icon": "50n"
+    },
+    "main": {
+      "temperature": 27.99,
+      "feels_like": 32.54,
+      "temp_min": 27.99,
+      "temp_max": 27.99,
+      "pressure": 1009,
+      "humidity": 83,
+      "sea_level": 1009,
+      "grnd_level": 1009
+    },
+    "visibility": 2500,
+    "wind": {
+      "speed": 3.6,
+      "deg": 240,
+      "gust": 8.75
+    },
+    "clouds": {
+      "all": 75
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800281,
+    "sys": {
+      "type": 1,
+      "id": 9052,
+      "country": "IN",
+      "sunrise": 1755737483,
+      "sunset": 1755783154
+    },
+    "timezone": 19800,
+    "id": 1275339,
+    "timestamp": "2025-08-21T18:27:36.765856+00:00",
+    "producer_id": "weather-data-producer"
+  },
+  {
+    "city": "Toronto",
+    "country": "CA",
+    "coordinates": {
+      "longitude": -79.4163,
+      "latitude": 43.7001
+    },
+    "weather": {
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02d"
+    },
+    "main": {
+      "temperature": 22.37,
+      "feels_like": 22.36,
+      "temp_min": 21.22,
+      "temp_max": 24.12,
+      "pressure": 1018,
+      "humidity": 65,
+      "sea_level": 1018,
+      "grnd_level": 1002
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.24,
+      "deg": 80,
+      "gust": 5.81
+    },
+    "clouds": {
+      "all": 22
+    },
+    "rain": null,
+    "snow": null,
+    "dt": 1755800020,
+    "sys": {
+      "type": 2,
+      "id": 2040045,
+      "country": "CA",
+      "sunrise": 1755772159,
+      "sunset": 1755821553
+    },
+    "timezone": -14400,
+    "id": 6167865,
+    "timestamp": "2025-08-21T18:27:36.765859+00:00",
+    "producer_id": "weather-data-producer"
+  }
+]

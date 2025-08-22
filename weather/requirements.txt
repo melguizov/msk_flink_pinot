@@ -1,0 +1,4 @@
+# Weather Data Producer Dependencies
+requests==2.31.0
+fastavro==1.12.0
+schedule==1.2.0
