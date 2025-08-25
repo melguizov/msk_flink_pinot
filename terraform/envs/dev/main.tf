@@ -5,12 +5,13 @@
 terraform {
   required_version = ">= 1.0"
   
-  backend "s3" {
-    # Configure your S3 backend here
-    # bucket = "your-terraform-state-bucket"
-    # key    = "dev/terraform.tfstate"
-    # region = "us-east-1"
-  }
+  # Using local backend for development
+  # backend "s3" {
+  #   # Configure your S3 backend here
+  #   # bucket = "your-terraform-state-bucket"
+  #   # key    = "dev/terraform.tfstate"
+  #   # region = "us-east-1"
+  # }
 }
 
 # Call the root module with development-optimized variables
@@ -23,6 +24,10 @@ module "infrastructure" {
   vpc_azs             = ["us-east-1a", "us-east-1b"]  # Multi-AZ for development
   vpc_private_subnets = ["10.1.1.0/24", "10.1.2.0/24"]
   vpc_public_subnets  = ["10.1.101.0/24", "10.1.102.0/24"]
+  
+  # Disable NAT gateway to avoid EIP requirement
+  enable_nat_gateway = false
+  single_nat_gateway = false
   
   # Kafka Configuration - ENHANCED for development
   kafka_cluster_name     = "dev-msk-cluster"
@@ -114,6 +119,10 @@ module "infrastructure" {
       memory = "2Gi"
     }
   }
+  
+  # Bastion Configuration
+  bastion_public_key = var.bastion_public_key
+  bastion_allowed_ssh_cidrs = var.bastion_allowed_ssh_cidrs
   
   # Development tags
   tags = {

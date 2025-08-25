@@ -7,7 +7,7 @@ name = "msk-admin"
 version = "0.1.0"
 description = "Production-grade Python tool for managing Amazon MSK (Kafka) control-plane tasks"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [
     {name = "MSK Admin Team", email = "admin@example.com"}
@@ -24,7 +24,7 @@ classifiers = [
 
 dependencies = [
     "typer[all]>=0.9.0",
-    "confluent-kafka>=2.3.0",
+    "confluent-kafka>=1.9.0,<2.0.0",
     "boto3>=1.34.0",
     "aws-glue-schema-registry>=1.1.3",
     "aws-msk-iam-sasl-signer-python>=1.0.1",

@@ -453,3 +453,16 @@ variable "bastion_allowed_ssh_cidrs" {
   type        = list(string)
   default     = ["0.0.0.0/0"]
 }
+
+# VPC NAT Gateway Variables
+variable "enable_nat_gateway" {
+  description = "Enable NAT gateway for private subnets"
+  type        = bool
+  default     = true
+}
+
+variable "single_nat_gateway" {
+  description = "Use single NAT gateway for all private subnets"
+  type        = bool
+  default     = true
+}

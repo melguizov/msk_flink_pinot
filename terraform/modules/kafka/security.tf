@@ -30,6 +30,15 @@ resource "aws_security_group" "msk" {
     description     = "Allow Zookeeper access from bastion host"
   }
 
+  # Allow access from bastion to MSK on port 9096
+  ingress {
+    from_port       = 9096
+    to_port         = 9096
+    protocol        = "tcp"
+    security_groups = [var.bastion_security_group_id]
+    description     = "Allow access from bastion host to MSK cluster on port 9096"
+  }
+
   egress {
     from_port   = 0
     to_port     = 0

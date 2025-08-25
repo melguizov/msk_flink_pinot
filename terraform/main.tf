@@ -10,8 +10,8 @@ module "vpc" {
   private_subnets = var.vpc_private_subnets
   public_subnets  = var.vpc_public_subnets
 
-  enable_nat_gateway     = true
-  single_nat_gateway     = true
+  enable_nat_gateway     = var.enable_nat_gateway
+  single_nat_gateway     = var.single_nat_gateway
   enable_dns_hostnames   = true
   enable_dns_support     = true
 
@@ -79,7 +79,7 @@ module "bastion" {
   allowed_ssh_cidrs  = var.bastion_allowed_ssh_cidrs
   root_volume_size   = 20
   enable_elastic_ip  = false
-  git_repo_url       = "https://github.com/your-username/msk_flink_pinot.git"  # Update with your repo URL
+  git_repo_url       = "https://github.com/melguizov/msk_flink_pinot.git"  # Update with your repo URL
   
   tags = var.tags
 }

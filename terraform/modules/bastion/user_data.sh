@@ -10,12 +10,22 @@ yum install -y \
     curl \
     unzip \
     java-11-amazon-corretto-headless \
-    python3 \
-    python3-pip \
     docker \
     htop \
     vim \
-    tmux
+    tmux \
+    gcc \
+    openssl-devel \
+    bzip2-devel \
+    libffi-devel \
+    zlib-devel \
+    readline-devel \
+    sqlite-devel \
+    make
+
+# Install Development Tools and Kafka development libraries
+yum groupinstall "Development Tools" -y
+yum install -y librdkafka-devel python3-devel
 
 # Install AWS CLI v2
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -23,27 +33,33 @@ unzip awscliv2.zip
 ./aws/install
 rm -rf aws awscliv2.zip
 
-# Install Terraform
-wget https://releases.hashicorp.com/terraform/1.6.6/terraform_1.6.6_linux_amd64.zip
-unzip terraform_1.6.6_linux_amd64.zip
-mv terraform /usr/local/bin/
-rm terraform_1.6.6_linux_amd64.zip
+# Install Python 3.9 from source
+cd /tmp
+wget https://www.python.org/ftp/python/3.9.19/Python-3.9.19.tgz
+tar xzf Python-3.9.19.tgz
+cd Python-3.9.19
+./configure --enable-optimizations --prefix=/usr/local
+sudo make altinstall
+cd /
+rm -rf /tmp/Python-3.9.19*
+
+# Create symlinks for python3.9
+ln -sf /usr/local/bin/python3.9 /usr/local/bin/python3
+ln -sf /usr/local/bin/python3.9 /usr/local/bin/python39
+ln -sf /usr/local/bin/pip3.9 /usr/local/bin/pip3
+ln -sf /usr/local/bin/pip3.9 /usr/local/bin/pip39
+
+# Add Python 3.9 to PATH
+echo 'export PATH=/usr/local/bin:$PATH' >> /etc/profile
+
 
 # Install kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
 mv kubectl /usr/local/bin/
 
-# Install Kafka CLI tools
-cd /opt
-wget https://downloads.apache.org/kafka/2.8.1/kafka_2.13-2.8.1.tgz
-tar -xzf kafka_2.13-2.8.1.tgz
-ln -s kafka_2.13-2.8.1 kafka
-echo 'export PATH=$PATH:/opt/kafka/bin' >> /etc/profile
-rm kafka_2.13-2.8.1.tgz
-
-# Install Python packages for Kafka
-pip3 install kafka-python aws-msk-iam-sasl-signer-python boto3
+# Install Python packages for AWS (as ec2-user to avoid root privileges warning)
+sudo -u ec2-user /usr/local/bin/pip3.9 install --user boto3
 
 # Start and enable Docker
 systemctl start docker
@@ -64,17 +80,11 @@ fi
 # Create useful aliases
 cat >> /home/ec2-user/.bashrc << 'EOF'
 
-# Kafka aliases
-alias kafka-topics='/opt/kafka/bin/kafka-topics.sh'
-alias kafka-console-producer='/opt/kafka/bin/kafka-console-producer.sh'
-alias kafka-console-consumer='/opt/kafka/bin/kafka-console-consumer.sh'
-
-# AWS and Terraform aliases
-alias tf='terraform'
+# AWS and kubectl aliases
 alias k='kubectl'
 
 # Environment
-export PATH=$PATH:/opt/kafka/bin
+export PATH=$PATH
 export JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 EOF
 
@@ -98,15 +108,6 @@ EOF
 chmod +x /home/ec2-user/setup-aws-profile.sh
 chown ec2-user:ec2-user /home/ec2-user/setup-aws-profile.sh
 
-# Create Kafka client properties template
-cat > /home/ec2-user/kafka-client.properties << 'EOF'
-security.protocol=SASL_SSL
-sasl.mechanism=AWS_MSK_IAM
-sasl.jaas.config=software.amazon.msk.auth.iam.IAMLoginModule required;
-sasl.client.callback.handler.class=software.amazon.msk.auth.iam.IAMClientCallbackHandler
-EOF
-
-chown ec2-user:ec2-user /home/ec2-user/kafka-client.properties
 
 # Create welcome message
 cat > /etc/motd << 'EOF'
@@ -118,25 +119,14 @@ Welcome to your development bastion host!
 
 Available tools:
   - AWS CLI v2
-  - Terraform
   - kubectl
-  - Kafka CLI tools
-  - Git, Docker, Python3
+  - Git, Docker, Python 3.9
   - Java 11 (Amazon Corretto)
 
 Quick start:
   1. Run: ./setup-aws-profile.sh (to configure AWS credentials)
-  2. Navigate to: cd workspace/msk_flink_pinot/terraform
-  3. Initialize: terraform init
-  4. Deploy: terraform apply
-
-Kafka tools are available in PATH:
-  - kafka-topics
-  - kafka-console-producer
-  - kafka-console-consumer
-
-Configuration files:
-  - ~/kafka-client.properties (MSK SASL/IAM config)
+  2. Navigate to: cd workspace/msk_flink_pinot
+  3. Start working with Python, or other tools
 
 ================================================================================
 EOF
